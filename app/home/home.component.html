@@ -1,0 +1,41 @@
+<br>
+
+
+<div *ngIf="data" class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Power Ball</h3>
+                </div>
+                <div class="panel-body">
+                    <h3><p>Real Jackpot:<b>{{powerTakeHome | currency:'USD':true:'1.2-2'}} <small>Million</small></b></p></h3>
+                    <p>Advertised Jackpot:{{data.power.jackpot | currency:'USD':true:'1.2-2'}}</p>
+                    <p>Advertised LumpSum:{{data.power.lump | currency:'USD':true:'1.2-2'}}</p>
+                    
+                    todo: show the calculations
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1">
+            <!-- empty space -->
+        </div>
+        <div class="col-sm-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Mega Millions</h3>
+                </div>
+                <div class="panel-body">
+                    <h3><p>Real Jackpot:<b>{{megaTakeHome | currency:'USD':true:'1.2-2'}} <small>Million</small></b></p></h3>
+                    <p>Advertised Jackpot:{{data.mega.jackpot | currency:'USD':true:'1.2-2'}}</p>
+                    <p>Advertised LumpSum:{{data.mega.lump | currency:'USD':true:'1.2-2'}}</p>
+                    
+                    todo: show the calculations
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
